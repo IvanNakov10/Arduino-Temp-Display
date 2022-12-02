@@ -30,6 +30,9 @@ void loop() {
   Serial.println("Error: Failed to read temp");
   return;
   }
-  
-  
+
+  Serial.print(Tempreture);
+  Serial.print(" C");
+
+tm1637.display(Tempreture);  
 }
