@@ -24,6 +24,12 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
- 
+  delay(200);
+  float Tempreture = dht.readTemperature();
+  if (isnan(Tempreture)) {
+  Serial.println("Error: Failed to read temp");
+  return;
+  }
+  
   
 }
