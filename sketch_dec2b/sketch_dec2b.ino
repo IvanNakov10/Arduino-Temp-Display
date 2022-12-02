@@ -33,6 +33,6 @@ void loop() {
 
   Serial.print(Tempreture);
   Serial.print(" C");
-
-tm1637.display(Tempreture);  
+  Serial.println();  
+  tm1637.display(Tempreture);  
 }
