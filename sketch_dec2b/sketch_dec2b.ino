@@ -15,10 +15,15 @@ DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
   // put your setup code here, to run once:
-
+  Serial.begin(9600);
+  tm1637.init();
+  tm1637.setBrightness(6);
+  dht.begin();
+  
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+ 
+  
 }
